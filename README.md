@@ -1,17 +1,55 @@
-# tune
+# Tune App
 
-A new Flutter project.
+**Tune** is a simple Flutter application that allows users to play different musical notes by tapping on color-coded buttons. Each button represents a different sound, providing an interactive way to explore various musical tones.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- **Color-coded buttons**: Each button is associated with a unique color, making it easy to distinguish between different sounds.
+- **Tap to play**: Users can tap on any button to play the corresponding musical note.
+- **Clean UI**: The app has a straightforward and clean user interface with a centered title and neatly organized buttons.
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Home Screen
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# Tune_App" 
+<img src="assets/Screen_Shot/Screenshot_1721398326.png" alt="Home Screen" width="300"/>
+
+*The main screen displaying all the color-coded buttons for playing different musical notes.*
+
+### Playing a Note
+
+<img src="path_to_screenshot_2" alt="Playing a Note" width="300"/>
+
+*Example of a note being played when a button is tapped.*
+
+## Technical Details
+
+- **Programming Language**: Dart
+- **Framework**: Flutter
+- **Packages Used**: 
+  - `audioplayers` for audio playback
+
+## Code Overview
+
+### `main.dart`
+The entry point of the app, setting up the `MaterialApp` and `TunePage`.
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:tune/screens/tune_page.dart';
+
+void main() {
+  runApp(const Tune());
+}
+
+class Tune extends StatelessWidget {
+  const Tune({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: TunePage(),
+    );
+  }
+}
