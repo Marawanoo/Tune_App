@@ -16,12 +16,6 @@
 
 *The main screen displaying all the color-coded buttons for playing different musical notes.*
 
-### Playing a Note
-
-<img src="path_to_screenshot_2" alt="Playing a Note" width="300"/>
-
-*Example of a note being played when a button is tapped.*
-
 ## Technical Details
 
 - **Programming Language**: Dart
